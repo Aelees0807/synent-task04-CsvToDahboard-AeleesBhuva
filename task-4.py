@@ -68,7 +68,7 @@ def load_data(uploaded_file=None):
             df = pd.read_csv(uploaded_file)
         else:
             # Try to load default file bundled with the app repository
-            df = pd.read_csv(r"D:\Internship SEM-4(Synent Infotech)\task-4\netflix_titles.csv")
+             df = pd.read_csv('netflix_titles.csv')
         
         # Parse dates
         if 'date_added' in df.columns:
